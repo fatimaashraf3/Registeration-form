@@ -1,0 +1,51 @@
+body{
+            background-color: #164451;
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+}
+#studentform{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-left:10%;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#add , #remove {
+   background-color: #164451;
+   color: white;
+   height: 8vh;
+   width: 10%;
+   font-weight: 600;
+   font-size: 18px;
+   border-radius: 10px;
+}
+#submit{
+    background-color: #164451;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    height: 5vh;
+    width: 30%;
+    margin-top: 3%;
+}
+.main{
+    margin-left: 5%;
+}
+#add{
+    margin-right: 16%;
+    width: 12%;
+}
+#fname , #lname ,#age,#qualification,#cell{
+    height: 3vh;
+    width: 54%;
+}
+#tablebox{
+    margin-top: 10%;
+}
+
