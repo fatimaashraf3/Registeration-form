@@ -16,7 +16,7 @@ tablerow.innerHTML = `
 <th class ="top"> Name</th>
 <th class ="top">Father's name</th>
 <th class ="top"> Age</th>
-<th class ="top">Qualification</th>
+<th class ="top">Last qualification</th>
 <th class ="top"> Cell no</th>
 <th class ="top"> Roll no</th> 
 `;
@@ -28,6 +28,7 @@ tablebox.appendChild(table);
 
 var rollno= Math.floor(Math.random()*1000000)
 console.log(rollno);
+
 submit.addEventListener("click", function(){
   if(fname.value == "" || lname.value == "" ||age.value == "" || cell.value == "" || qualification.value==""){
     alert("Please fill all the details")
@@ -37,7 +38,7 @@ submit.addEventListener("click", function(){
   var childdata = {
     fname: fname.value,
     lname: lname.value,
-    // qualification:qualification.value,
+    qualification:qualification.value,
     age: age.value,
     cell: cell.value,
     rollno: Math.floor(Math.random()*1000000)
@@ -62,17 +63,17 @@ var tablerow = document.createElement("tr");
 fname.value = ""
 lname.value = ""
 age.value = ""
-qualification = ""
+qualification.value = ""
 cell.value = ""
 }
+tableborder.style.display = "block"
 })
 
 let add = document.getElementById("add");
 
 add.addEventListener("click" , function(){
-    tableborder.style.display = "none"
+    tableborder.style.display = "none";
     studentform.style.display = "block"
-    add.style.display = "none"
 
     fname.value = "";
     lname.value = "";
@@ -84,6 +85,7 @@ add.addEventListener("click" , function(){
 let remove = document.getElementById("delete")
 
 remove.addEventListener("click" , function(){ 
-    localStorage.removeItem()
+
+   localStorage.removeItem(alldata)
 })
 

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="color">
     <div id="studentform">
-        <button id="add">Add student</button>
         <div class="main">
     <h3>Name:</h3>
     <input id="fname" placeholder="Enter your name" type="text" required>
@@ -30,16 +30,15 @@
 </div>
 
 
-    <div id="tableborder">
+    <div id="tableborder" style="display: none;">
         <table id="tablebox" style="border: 2px solid black;"></table>
     </div>
-
+        </div>
 
    </div> 
    <button id="remove">Delete</button>
-    </div>
-    
-    
+   <button id="add">Add student</button>
+</div>
     
 
     <script src="app.js"></script>
